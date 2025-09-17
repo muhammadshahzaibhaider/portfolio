@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Muhammad Shahzaib Haider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-left">
+        <h2>Muhammad Shahzaib Haider</h2>
+      </div>
+      <nav class="nav-right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-left" data-aos="fade-right">
+          <div class="hero-text">
+            <h1>
+              Hi There!
+              <div>my name is</div>
+              <div class="name">Muhammad Shahzaib Haider</div>
+              <div>I'm Passionate In</div>
+              <span id="element"></span>
+            </h1>
+          </div>
+        </div>
+        <div class="hero-right" data-aos="fade-left">
+          <img src="Developmentpic.png" alt="Profile Picture" />
+        </div>
+      </section>
+
+      <section id="about" class="about-me">
+        <hr />
+        <div class="about-me-left" data-aos="zoom-in-up">
+          <img src="aboutme.png" alt="About Me Image" />
+        </div>
+        <div class="about-me-right" data-aos="zoom-in-up">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          </div>
+          <div>
+            <p>
+              I am a dedicated and passionate developer and designer with a keen eye for detail. I believe in creating not just websites, but digital experiences that are intuitive, accessible, and beautiful. My journey began with a curiosity for how things work on the web, and it has evolved into a passion for building robust and user-centric solutions. From front-end development to UI/UX design, I continuously strive to learn new technologies and hone my skills to deliver high-quality work. My goal is to help businesses and individuals bring their ideas to life by crafting clean, efficient, and scalable digital products.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="services-container" id="services">
+        <h2 class="services-heading">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="web-dev-modal">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Creating responsive and modern websites using HTML, CSS, and
+              JavaScript. I build custom solutions tailored to your needs.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="ui-ux-modal">
+            <i class="fas fa-drafting-compass"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Designing user-friendly interfaces with a focus on intuitive user
+              experiences. I create visually appealing and functional designs.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="graphic-design-modal">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Design</h3>
+            <p>
+              Developing compelling visuals for your brand, including logos,
+              marketing materials, and digital art to make you stand out.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="seo-modal">
+            <i class="fas fa-search-dollar"></i>
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>
+              Improving your website's visibility on search engines to drive
+              organic traffic, increase rankings, and grow your online presence.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="video-editing-modal">
+            <i class="fas fa-video"></i>
+            <h3>Video Editing</h3>
+            <p>
+              Crafting engaging video content by trimming, arranging, and
+              enhancing raw footage to create a compelling visual story for your
+              audience.
+            </p>
+          </div>
+          <div class="service-card" data-aos="zoom-in-up" data-modal-target="wordpress-modal">
+            <i class="fab fa-wordpress-simple"></i>
+            <h3>WordPress Development</h3>
+            <p>
+              Building and customizing WordPress websites, from theme
+              development and plugin integration to full-scale site management
+              and maintenance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" class="contact-us">
+        <div class="contact-content">
+          <h2 class="contact-heading" data-aos="zoom-in-up">Get In Touch</h2>
+          <p class="contact-subheading" data-aos="zoom-in-up">
+            Have a question or a project in mind? I'd love to hear from you!
+          </p>
+          <div class="contact-form-container" data-aos="zoom-in-up">
+            <form
+              action="https://formspree.io/f/xzzaqaeb"
+              method="POST"
+              class="contact-form"
+            >
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+          </div>
+           
+
+          <!-- <a href="https://wa.me/+923096040993?text=I'm%20interested%20in%20your%20services." target="_blank" class="whatsapp-btn">Get a Quote</a> -->
+        </div>
+      </section>
+    </main>
+
+   <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Muhammad Shahzaib Haider. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/+923096040993?text=I'm%20interested%20in%20your%20services." target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="modal-heading"></h2>
+        <div class="modal-body">
+          <img src="" alt="adgffffdfgssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" class="modal-image" />
+          <p></p>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

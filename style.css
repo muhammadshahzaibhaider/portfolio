@@ -1,0 +1,445 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Crucial for responsive design */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: #26667f;
+  line-height: 1.6; /* Improves text readability */
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Optional: ensures it stays on top of other content */
+}
+/* --- Navigation Bar --- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #0d3c4e;
+  border-bottom: 1.5px solid white;
+  padding: 0 5%; /* Use percentage for horizontal padding */
+}
+
+.nav-left h2 {
+  color: aliceblue;
+  font-size: clamp(1rem, 4vw, 2rem);
+  overflow: hidden; /* Fluid font size */
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-right ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  transition: color 0.3s;
+}
+
+.nav-right ul li a:hover {
+  color: aquamarine;
+}
+
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+.hero-text {
+  color: aliceblue;
+  padding: 2rem 0;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.name {
+  color: aquamarine;
+}
+.hero-right {
+  position: relative;
+  width: 50%;
+}
+.hero-left {
+  width: 50%;
+}
+
+.hero-right img {
+  position: relative;
+  left: 0;
+}
+
+#element {
+  color: aquamarine;
+}
+
+/* --- About Me Section --- */
+.about-me {
+  display: flex;
+  flex-direction: column; /* Default stack on mobile */
+  align-items: center;
+  background-color: #0d3c4e;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-me-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.about-me-right {
+  color: aliceblue;
+}
+
+.about-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.about-me-right p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services-container {
+  background-color: #0d3c4e;
+  padding: 4rem 2rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.services-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Better for responsiveness */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #26667f;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Add a pointer cursor to show it's clickable */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: aquamarine;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* --- Contact Us Section --- */
+.contact-us {
+  background-color: #26667f;
+  color: aliceblue;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.contact-subheading {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #0d3c4e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: aquamarine;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #5a7d8d;
+  border-radius: 5px;
+  background-color: #1a4f63;
+  color: aliceblue;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: aquamarine;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allows vertical resizing */
+}
+
+.submit-btn {
+  background-color: aquamarine;
+  color: #0d3c4e;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #72ffc4;
+  transform: translateY(-2px);
+}
+/* --- Modal Styles --- */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 700px;
+  border-radius: 10px;
+  position: relative;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.modal-heading {
+  color: #0d3c4e;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.modal-body p,
+.modal-body li {
+  color: #333;
+  line-height: 1.6;
+}
+.modal-body ul {
+  color: #333;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .nav {
+    padding: 0 10%;
+  }
+
+  .hero {
+    flex-direction: row; /* Side-by-side on larger screens */
+    text-align: left;
+    padding: 6rem 5%;
+    justify-content: space-around;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-right {
+    position: static;
+    flex: 1;
+    text-align: center;
+  }
+
+  .about-me {
+    flex-direction: row;
+    text-align: left;
+    gap: 3rem;
+    padding: 6rem 5%;
+  }
+
+  .about-me-left,
+  .about-me-right {
+    flex: 1;
+  }
+
+  .about-me-left {
+    margin-bottom: 0;
+  }
+
+  .about-me-right p {
+    text-align: left;
+  }
+}
+
+.footer {
+    background-color: #0d3c4e;
+    color: aliceblue;
+    padding: 2rem 5%;
+    text-align: center;
+    border-top: 1.5px solid white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: aquamarine;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25d366; /* WhatsApp's official green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-icon i {
+    font-size: 1.6rem; /* Adjust size as needed */
+    color: aquamarine;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-icon:hover i {
+    color: #128c7e;
+}
